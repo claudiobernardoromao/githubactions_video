@@ -33,7 +33,7 @@ jobs:
       run: dotnet restore
       working-directory: ./src
       
-    - name: dotnet build
+    - name: dotnet build 
       run: |
         dotnet build --configuration Release
       working-directory: ./src
