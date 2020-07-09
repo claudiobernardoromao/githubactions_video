@@ -8,7 +8,7 @@ on:
   push:
     branches:  
     - dev
-    - 'features/**' 
+    - 'features/**'
   pull_request:
     branches: [ master ]
 
@@ -36,4 +36,4 @@ jobs:
     - name: dotnet build
       run: |
         dotnet build --configuration Release
-    
+      working-directory: ./src
